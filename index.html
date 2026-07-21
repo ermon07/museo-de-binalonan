@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Museo de Binalonan</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top museum-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="assets/img/logo.png"
+            alt="Museo de Binalonan"
+            class="logo me-3"
+          />
+          <div class="brand-text">
+            <div class="brand-title">Museo de Binalonan</div>
+            <div class="brand-subtitle">Municipal Museum</div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collections">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visit">Visit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-6">
+
+            <h1 class="hero-title">
+              Preserving Heritage.<br />
+              Connecting Generations.
+            </h1>
+
+            <p class="hero-description">
+              A cultural institution dedicated to preserving the stories,
+              traditions, and artifacts that shape the identity of Binalonan.
+            </p>
+
+            <a href="#about" class="btn btn-museum"> Explore the Museum </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img
+                src="assets/img/logo.png"
+                alt="Museo de Binalonan"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <span class="section-label"> ABOUT THE MUSEUM </span>
+
+            <h2>Preserving the History of Binalonan</h2>
+
+            <p>
+              Museo de Binalonan is dedicated to preserving, documenting, and
+              showcasing the rich cultural heritage of the municipality through
+              historical artifacts, archival materials, photographs, and
+              community stories.
+            </p>
+
+            <p>
+              The museum serves as a learning space where residents, students,
+              and visitors can discover the people, traditions, and events that
+              shaped Binalonan through generations.
+            </p>
+
+            <a href="#" class="btn-about"> Learn More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="collections-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>FEATURED COLLECTIONS</span>
+
+          <h2>Discover Our Heritage</h2>
+
+          <p>
+            Explore selected collections that reflect the history, culture, and
+            identity of the Municipality of Binalonan.
+          </p>
+        </div>
+
+        <!-- Collection 1 -->
+
+        <div class="row align-items-center collection-item">
+          <div class="col-lg-6">
+            <img
+              src="assets/img/logo.png"
+              class="img-fluid collection-image"
+              alt="Traditional Clothing"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Traditional Clothing</h3>
+
+            <p>
+              A showcase of garments worn by early residents, reflecting local
+              craftsmanship and identity.
+            </p>
+
+            <a href="#"> View Collection → </a>
+          </div>
+        </div>
+
+        <!-- Collection 2 -->
+
+        <div class="row align-items-center collection-item flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <img
+              src="assets/img/logo.png"
+              class="img-fluid collection-image"
+              alt="Pottery"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Ancient Pottery</h3>
+
+            <p>
+              Earthenware and ceramic artifacts discovered from various periods
+              of Binalonan's history.
+            </p>
+
+            <a href="#"> View Collection → </a>
+          </div>
+        </div>
+
+        <!-- Collection 3 -->
+
+        <div class="row align-items-center collection-item">
+          <div class="col-lg-6">
+            <img
+              src="assets/img/logo.png"
+              class="img-fluid collection-image"
+              alt="Historical Documents"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Historical Documents</h3>
+
+            <p>
+              Archival records, maps, and photographs that preserve significant
+              moments in the municipality's history.
+            </p>
+
+            <a href="#"> View Collection → </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+
+    <section class="timeline-section" id="history">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>MUSEUM TIMELINE</span>
+
+          <h2>Journey Through Time</h2>
+
+          <p>
+            Explore significant milestones that shaped the history and heritage
+            of Binalonan.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1904</div>
+
+            <div class="timeline-content">
+              <h4>Municipality Established</h4>
+
+              <p>
+                Binalonan officially became a municipality, laying the
+                foundation for a growing community.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">1945</div>
+
+            <div class="timeline-content">
+              <h4>Liberation Era</h4>
+
+              <p>
+                The municipality witnessed important historical events during
+                the post-war period.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+
+            <div class="timeline-content">
+              <h4>Museo de Binalonan Opens</h4>
+
+              <p>
+                The museum officially opened its doors to preserve and celebrate
+                the municipality's cultural heritage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
