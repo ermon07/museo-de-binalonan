@@ -540,3 +540,36 @@ body {
 .theme-toggle:hover {
   transform: translateY(-3px);
 }
+
+
+@media (max-width: 991.98px){
+
+    .museum-navbar{
+
+        background:var(--surface);
+
+        border-bottom:1px solid var(--border);
+
+    }
+
+    .navbar-collapse{
+
+        background:var(--surface);
+
+    }
+
+    .navbar-nav{
+
+        padding:1rem 0;
+
+    }
+
+    .nav-link{
+
+        color:var(--text) !important;
+
+        padding:.8rem 0;
+
+    }
+
+}
