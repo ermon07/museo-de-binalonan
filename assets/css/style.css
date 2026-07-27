@@ -554,23 +554,25 @@ body {
 
     }
 
-    .navbar-collapse{
-
-        background:var(--surface);
-
-    }
-
-    .navbar-nav{
-
-        padding:1rem 0;
-
-    }
-
-    .nav-link{
+    .museum-navbar .brand-title,
+    .museum-navbar .brand-subtitle{
 
         color:var(--text) !important;
 
-        padding:.8rem 0;
+    }
+
+    .museum-navbar .nav-link{
+
+        color:var(--text) !important;
+
+    }
+
+    .museum-navbar.scrolled .brand-title,
+    .museum-navbar.scrolled .brand-subtitle,
+
+    .museum-navbar.scrolled .nav-link{
+
+        color:var(--text) !important;
 
     }
 
