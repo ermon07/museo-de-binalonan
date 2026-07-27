@@ -577,3 +577,32 @@ body {
     }
 
 }
+
+/*==================================================
+                NAVBAR TOGGLER
+==================================================*/
+
+
+.navbar-toggler{
+
+    border:none;
+
+    box-shadow:none;
+
+    color:var(--text);
+
+    font-size:2rem;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+.navbar-toggler i{
+
+    color:var(--text);
+
+}
