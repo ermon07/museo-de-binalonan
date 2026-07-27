@@ -34,3 +34,73 @@
     }
 
 }
+
+/*==================================================
+                STATS MOBILE
+==================================================*/
+
+
+@media(max-width:576px){
+
+    .stat-item h3{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+/*==================================================
+                VISIT MOBILE
+==================================================*/
+
+
+@media(max-width:768px){
+
+
+    .visit-section{
+
+        padding:80px 0;
+
+    }
+
+
+    .map-container{
+
+        height:300px;
+
+    }
+
+
+    .visit-section h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+}
+
+/*==================================================
+                FOOTER MOBILE
+==================================================*/
+
+
+@media(max-width:768px){
+
+
+    .museum-footer{
+
+        text-align:center;
+
+    }
+
+
+    .footer-brand p{
+
+        margin:auto;
+
+    }
+
+
+}

@@ -1,0 +1,105 @@
+/*==================================================
+                HERO ANIMATION
+==================================================*/
+
+
+.hero-title{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+
+.hero-description{
+
+    animation:fadeUp .8s ease .15s forwards;
+
+    opacity:0;
+
+}
+
+
+.hero-section .btn-museum{
+
+    animation:fadeUp .8s ease .3s forwards;
+
+    opacity:0;
+
+}
+
+
+/*==================================================
+                SECTION REVEAL
+==================================================*/
+
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*==================================================
+                IMAGE EFFECT
+==================================================*/
+
+
+.about-image img,
+.collection-image{
+
+    transition:transform .5s ease;
+
+}
+
+
+.about-image:hover img,
+.collection-image:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+/*==================================================
+                KEYFRAMES
+==================================================*/
+
+
+@keyframes fadeUp{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
