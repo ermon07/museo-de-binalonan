@@ -1,0 +1,36 @@
+/*==================================================
+                TABLET (≤ 991px)
+==================================================*/
+
+@media (max-width:991.98px){
+
+    .museum-navbar{
+
+        background:var(--surface);
+
+        border-bottom:1px solid var(--border);
+
+    }
+
+    .museum-navbar .brand-title,
+    .museum-navbar .brand-subtitle{
+
+        color:var(--text)!important;
+
+    }
+
+    .museum-navbar .nav-link{
+
+        color:var(--text)!important;
+
+    }
+
+    .museum-navbar.scrolled .brand-title,
+    .museum-navbar.scrolled .brand-subtitle,
+    .museum-navbar.scrolled .nav-link{
+
+        color:var(--text)!important;
+
+    }
+
+}
