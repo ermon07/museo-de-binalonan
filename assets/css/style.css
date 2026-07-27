@@ -1,98 +1,155 @@
-/* ================= NAVBAR ================= */
+/* ==================================================
+                    NAVBAR
+================================================== */
+
 
 .museum-navbar {
-  padding: 1rem 0;
 
-  background: transparent;
+    padding:1rem 0;
 
-  transition: 0.35s;
+    background:transparent;
+
+    transition:.35s;
+
 }
+
 
 .museum-navbar.scrolled {
-  background: var(--surface);
 
-  border-bottom: 1px solid var(--border);
+    background:var(--surface);
 
-  backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--border);
+
+    backdrop-filter:blur(10px);
+
 }
+
+
 
 .logo {
-  height: 52px;
+
+    height:52px;
+
 }
+
+
 
 .brand-title {
-  font-size: 0.95rem;
 
-  font-weight: 600;
+    font-size:.95rem;
 
-  color: #fff;
+    font-weight:600;
+
+    color:#fff;
+
 }
+
+
 
 .brand-subtitle {
-  font-size: 0.72rem;
 
-  color: rgba(255, 255, 255, 0.8);
+    font-size:.72rem;
+
+    color:rgba(255,255,255,.8);
+
 }
+
+
 
 .museum-navbar.scrolled .brand-title,
 .museum-navbar.scrolled .brand-subtitle {
-  color: var(--text);
+
+    color:var(--text);
+
 }
+
+
 
 .navbar-nav {
-  gap: 0.75rem;
+
+    gap:.75rem;
+
 }
+
+
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.9);
 
-  font-weight: 500;
+    color:rgba(255,255,255,.9);
 
-  position: relative;
+    font-weight:500;
+
+    position:relative;
+
 }
+
+
 
 .nav-link:hover,
 .nav-link.active {
-  color: #fff;
+
+    color:#fff;
+
 }
 
+
+
 .museum-navbar.scrolled .nav-link {
-  color: var(--text);
+
+    color:var(--text);
+
 }
+
+
 
 .museum-navbar.scrolled .nav-link:hover,
 .museum-navbar.scrolled .nav-link.active {
-  color: var(--primary);
+
+    color:var(--primary);
+
 }
+
+
 
 .nav-link::after {
-  content: "";
 
-  position: absolute;
+    content:"";
 
-  bottom: -4px;
+    position:absolute;
 
-  left: 0;
+    bottom:-4px;
 
-  width: 0;
+    left:0;
 
-  height: 2px;
+    width:0;
 
-  background: currentColor;
+    height:2px;
 
-  transition: 0.3s;
+    background:currentColor;
+
+    transition:.3s;
+
 }
+
+
 
 .nav-link:hover::after,
 .nav-link.active::after {
-  width: 100%;
+
+    width:100%;
+
 }
 
-/*==================================================
-                    BUTTONS
-==================================================*/
 
-.btn-museum{
+
+
+/* ==================================================
+                    BUTTONS
+================================================== */
+
+
+.btn-museum {
+
 
     display:inline-flex;
 
@@ -118,10 +175,13 @@
 
     transition:.3s;
 
+
 }
 
 
-.btn-museum:hover{
+
+.btn-museum:hover {
+
 
     background:#365B65;
 
@@ -129,338 +189,107 @@
 
     transform:translateY(-2px);
 
+
 }
 
-/*==================================================
+
+
+
+
+/* ==================================================
                     HERO
-==================================================*/
+================================================== */
+
 
 .hero-section {
-  position: relative;
-  min-height: 100vh;
-  background-image: var(--hero-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  transition: background-image 0.35s ease;
+    position:relative;
+
+    min-height:100vh;
+
+    background-image:var(--hero-image);
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
+    transition:background-image .35s ease;
+
 }
+
+
 
 .hero-overlay {
-  position: absolute;
 
-  inset: 0;
+    position:absolute;
 
-  background: rgba(20, 30, 35, 0.58);
+    inset:0;
+
+    background:rgba(20,30,35,.58);
+
 }
+
+
 
 .hero-content {
-  position: relative;
 
-  z-index: 2;
+    position:relative;
+
+    z-index:2;
+
 }
+
+
 
 .hero-title {
-  font-family: "Playfair Display", serif;
 
-  font-size: clamp(3rem, 6vw, 5.5rem);
 
-  line-height: 1.05;
+    font-family:"Playfair Display",serif;
 
-  color: var(--hero-text);
+    font-size:clamp(3rem,6vw,5.5rem);
 
-  margin-bottom: 1.5rem;
+    line-height:1.05;
 
-  max-width: 12ch;
+    color:var(--hero-text);
+
+    margin-bottom:1.5rem;
+
+    max-width:12ch;
+
+
 }
+
+
 
 .hero-description {
-  color: var(--hero-text);
 
-  opacity: 0.9;
 
-  font-size: 1.05rem;
+    color:var(--hero-text);
 
-  max-width: 560px;
+    opacity:.9;
 
-  line-height: 1.9;
+    font-size:1.05rem;
 
-  margin-bottom: 2rem;
+    max-width:560px;
+
+    line-height:1.9;
+
+    margin-bottom:2rem;
+
+
 }
 
-/*==================================================
+
+
+
+/* ==================================================
                     ABOUT
-==================================================*/
+================================================== */
+
 
 .about-section {
-  padding: 120px 0;
-  background: var(--surface);
- 
-}
-
-.section-label {
-  display: inline-block;
-
-  font-size: 0.85rem;
-
-  letter-spacing: 3px;
-
-  color: var(--primary);
-
-  font-weight: 600;
-
-  margin-bottom: 18px;
-}
-
-.about-section h2 {
-  font-family: "Playfair Display", serif;
-
-  font-size: 2.7rem;
-
-  color: var(--text);
-
-  margin-bottom: 25px;
-}
-
-.about-section p {
-  color: var(--text-light);
-
-  line-height: 1.9;
-
-  margin-bottom: 20px;
-}
-
-.about-image {
-  
-  overflow: hidden;
-  border-radius: 8px;
- 
-}
-
-.about-image img {
-  width: 100%;
-  transition: 0.5s;
-}
-
-.about-image:hover img {
-  transform: scale(1.04);
-}
-
-/*==================================================
-                COLLECTIONS
-==================================================*/
-
-.collections-section {
-  padding: 120px 0;
-
-  background: var(--background);
-}
-
-.section-title {
-  margin-bottom: 80px;
-}
-
-.section-title span {
-  color: var(--primary);
-
-  font-size: 0.85rem;
-
-  letter-spacing: 3px;
-
-  font-weight: 600;
-}
-
-.section-title h2 {
-  font-family: "Playfair Display", serif;
-
-  color: var(--text);
-
-  font-size: 2.8rem;
-
-  margin-top: 18px;
-}
-
-.section-title p {
-  max-width: 650px;
-
-  margin: 20px auto 0;
-
-  color: var(--text-light);
-
-  line-height: 1.9;
-}
-
-.collection-item {
-  margin-bottom: 120px;
-}
-
-.collection-image {
-  border-radius: 8px;
-
-  transition: 0.4s;
-}
-
-.collection-image:hover {
-  transform: scale(1.03);
-}
-
-.collection-item h3 {
-  font-family: "Playfair Display", serif;
-
-  color: var(--text);
-
-  margin-bottom: 20px;
-}
-
-.collection-item p {
-  color: var(--text-light);
-
-  line-height: 1.9;
-}
-
-.collection-item a {
-  color: var(--primary);
-
-  text-decoration: none;
-
-  font-weight: 600;
-}
-
-.collection-item a:hover {
-  text-decoration: underline;
-}
-
-
-/*==================================================
-                THEME BUTTON
-==================================================*/
-
-.theme-toggle {
-  position: fixed;
-
-  bottom: 30px;
-
-  right: 30px;
-
-  width: 55px;
-
-  height: 55px;
-
-  border-radius: 50%;
-
-  border: 1px solid var(--border);
-
-  background: var(--surface);
-
-  color: var(--text);
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  cursor: pointer;
-
-  font-size: 1.2rem;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-
-  transition: 0.3s;
-
-  z-index: 9999;
-}
-
-.theme-toggle:hover {
-  transform: translateY(-3px);
-}
-
-
-/*==================================================
-                NAVBAR TOGGLER
-==================================================*/
-
-
-.navbar-toggler{
-
-    border:none;
-
-    box-shadow:none;
-
-    color:var(--text);
-
-    font-size:2rem;
-
-}
-
-.navbar-toggler:focus{
-
-    box-shadow:none;
-
-}
-
-.navbar-toggler i{
-
-    color:var(--text);
-
-}
-
-/*==================================================
-                MUSEUM HIGHLIGHTS
-==================================================*/
-
-
-.stats-section{
-
-    padding:90px 0;
-
-    background:var(--background);
-
-    border-top:1px solid var(--border);
-
-    border-bottom:1px solid var(--border);
-
-}
-
-
-.stat-item{
-
-    padding:30px 15px;
-
-}
-
-
-.stat-item h3{
-
-    font-family:"Playfair Display", serif;
-
-    font-size:2.8rem;
-
-    color:var(--primary);
-
-    margin-bottom:12px;
-
-}
-
-
-.stat-item p{
-
-    color:var(--text-light);
-
-    margin:0;
-
-    font-size:.95rem;
-
-    letter-spacing:.5px;
-
-}
-
-/*==================================================
-                VISIT SECTION
-==================================================*/
-
-
-.visit-section{
 
     padding:120px 0;
 
@@ -470,37 +299,57 @@
 
 
 
-.visit-section h2{
+.section-label {
+
+
+    display:inline-block;
+
+    font-size:.85rem;
+
+    letter-spacing:3px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+.about-section h2 {
+
 
     font-family:"Playfair Display",serif;
 
-    font-size:2.8rem;
+    font-size:2.7rem;
 
     color:var(--text);
 
-    margin-bottom:20px;
+    margin-bottom:25px;
+
 
 }
 
 
 
-.visit-description{
+.about-section p {
+
 
     color:var(--text-light);
 
-    line-height:1.8;
+    line-height:1.9;
 
-    margin-bottom:35px;
+    margin-bottom:20px;
+
 
 }
 
 
 
-.map-container{
-
-    width:100%;
-
-    height:450px;
+.about-image {
 
     overflow:hidden;
 
@@ -510,7 +359,297 @@
 
 
 
-.map-container iframe{
+.about-image img {
+
+
+    width:100%;
+
+
+}
+
+
+
+.about-image:hover img {
+
+
+    transform:scale(1.04);
+
+
+}
+
+
+
+
+
+/* ==================================================
+                COLLECTIONS
+================================================== */
+
+
+.collections-section {
+
+
+    padding:120px 0;
+
+    background:var(--background);
+
+
+}
+
+
+
+.section-title {
+
+
+    margin-bottom:80px;
+
+
+}
+
+
+
+.section-title span {
+
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+
+}
+
+
+
+.section-title h2 {
+
+
+    font-family:"Playfair Display",serif;
+
+    color:var(--text);
+
+    font-size:2.8rem;
+
+    margin-top:18px;
+
+
+}
+
+
+
+.section-title p {
+
+
+    max-width:650px;
+
+    margin:20px auto 0;
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+
+}
+
+
+
+.collection-item {
+
+
+    margin-bottom:120px;
+
+
+}
+
+
+
+.collection-image {
+
+
+    border-radius:8px;
+
+
+}
+
+
+
+.collection-item h3 {
+
+
+    font-family:"Playfair Display",serif;
+
+    color:var(--text);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.collection-item p {
+
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+
+}
+
+
+
+.collection-item a {
+
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+
+}
+
+
+
+.collection-item a:hover {
+
+
+    text-decoration:underline;
+
+
+}
+
+
+
+
+/* ==================================================
+                THEME BUTTON
+================================================== */
+
+
+.theme-toggle {
+
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    font-size:1.2rem;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+    z-index:9999;
+
+
+}
+
+
+
+.theme-toggle:hover {
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+/* ==================================================
+                VISIT SECTION
+================================================== */
+
+
+.visit-section {
+
+
+    padding:120px 0;
+
+    background:var(--surface);
+
+
+}
+
+
+
+.visit-section h2 {
+
+
+    font-family:"Playfair Display",serif;
+
+    font-size:2.8rem;
+
+    color:var(--text);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.visit-description {
+
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+.map-container {
+
+
+    width:100%;
+
+    height:450px;
+
+    overflow:hidden;
+
+    border-radius:8px;
+
+
+}
+
+
+
+.map-container iframe {
+
 
     width:100%;
 
@@ -518,43 +657,49 @@
 
     border:0;
 
+
 }
 
 
 
-.visit-details{
+.visit-details {
+
 
     border-top:1px solid var(--border);
 
+
 }
 
 
 
-.visit-item{
+.visit-item {
+
 
     padding:20px 0;
 
     border-bottom:1px solid var(--border);
 
+
 }
 
 
 
-.visit-item h4{
+.visit-item h4 {
 
-    font-size:1rem;
-
-    font-weight:600;
 
     color:var(--primary);
 
+    font-size:1rem;
+
     margin-bottom:8px;
+
 
 }
 
 
 
-.visit-item p{
+.visit-item p {
+
 
     color:var(--text-light);
 
@@ -562,14 +707,21 @@
 
     line-height:1.7;
 
+
 }
 
-/*==================================================
+
+
+
+
+/* ==================================================
                     FOOTER
-==================================================*/
+================================================== */
 
 
-.museum-footer{
+.museum-footer {
+
+    min-height:400px;
 
     padding:80px 0 30px;
 
@@ -577,21 +729,25 @@
 
     border-top:1px solid var(--border);
 
+
 }
 
 
 
-.footer-logo{
+.footer-logo {
+
 
     height:60px;
 
     margin-bottom:20px;
 
+
 }
 
 
 
-.footer-brand h3{
+.footer-brand h3 {
+
 
     font-family:"Playfair Display",serif;
 
@@ -599,11 +755,13 @@
 
     margin-bottom:15px;
 
+
 }
 
 
 
-.footer-brand p{
+.footer-brand p {
+
 
     color:var(--text-light);
 
@@ -611,35 +769,41 @@
 
     max-width:420px;
 
+
 }
 
 
 
-.museum-footer h4{
+.museum-footer h4 {
+
 
     font-size:1rem;
 
     color:var(--text);
 
+    margin-bottom:20px;
+
     font-weight:600;
 
-    margin-bottom:20px;
 
 }
 
 
 
-.museum-footer p{
+.museum-footer p {
+
 
     color:var(--text-light);
 
     line-height:1.8;
 
+
 }
 
 
 
-.footer-links{
+.footer-links {
+
 
     list-style:none;
 
@@ -647,19 +811,23 @@
 
     margin:0;
 
+
 }
 
 
 
-.footer-links li{
+.footer-links li {
+
 
     margin-bottom:12px;
 
+
 }
 
 
 
-.footer-links a{
+.footer-links a {
+
 
     color:var(--text-light);
 
@@ -667,19 +835,23 @@
 
     transition:.3s;
 
+
 }
 
 
 
-.footer-links a:hover{
+.footer-links a:hover {
+
 
     color:var(--primary);
 
+
 }
 
 
 
-.footer-bottom{
+.footer-bottom {
+
 
     margin-top:50px;
 
@@ -689,14 +861,17 @@
 
     text-align:center;
 
+
 }
 
 
 
-.footer-bottom p{
+.footer-bottom p {
+
 
     margin:0;
 
     font-size:.9rem;
+
 
 }
