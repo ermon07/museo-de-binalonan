@@ -14,6 +14,8 @@
   --hero-text: #FFFFFF;
 
   --hero-image: url("../img/hero-day.png");
+
+  --about-image: url("../img/mus.jpg");
 }
 
 body.dark-mode {
@@ -239,8 +241,8 @@ body {
 
 .about-section {
   padding: 120px 0;
-
   background: var(--surface);
+ 
 }
 
 .section-label {
@@ -276,14 +278,14 @@ body {
 }
 
 .about-image {
+  
   overflow: hidden;
-
   border-radius: 8px;
+ 
 }
 
 .about-image img {
   width: 100%;
-
   transition: 0.5s;
 }
 
