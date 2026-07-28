@@ -6,6 +6,12 @@
 
     <title>Museo de Binalonan</title>
 
+    <script 
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async 
+      defer>
+    </script>
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -304,37 +310,184 @@
             </p>
 
             <div class="visit-details">
-              <div class="visit-item">
-                <h4>Location</h4>
 
-                <p>Binalonan, Pangasinan</p>
-              </div>
+  <div class="visit-item">
+    <h4>Location</h4>
 
-              <div class="visit-item">
-                <h4>Opening Hours</h4>
+    <p>
+      Binalonan, Pangasinan
+    </p>
+  </div>
 
-                <p>
-                  Monday - Friday<br />
-                  8:00 AM - 5:00 PM
-                </p>
-              </div>
 
-              <div class="visit-item">
-                <h4>Admission</h4>
+  <div class="visit-item">
+    <h4>Opening Hours</h4>
 
-                <p>Free Admission</p>
-              </div>
+    <p>
+      Monday - Friday<br>
+      8:00 AM - 5:00 PM
+    </p>
+  </div>
 
-              <div class="visit-item">
-                <h4>Contact</h4>
 
-                <p>Municipal Tourism Office</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="visit-item">
+    <h4>Admission</h4>
+
+    <p>
+      Free Admission
+    </p>
+  </div>
+
+
+  <div class="visit-item">
+    <h4>Contact</h4>
+
+    <p>
+      Municipal Tourism Office
+    </p>
+  </div>
+
+
+</div>
+
+
+<!-- VISITOR INQUIRY FORM -->
+
+<!-- VISITOR INQUIRY FORM -->
+
+<div class="visit-form mt-5">
+
+<h4 class="mb-4">
+Send an Inquiry
+</h4>
+
+
+<form 
+action="https://api.web3forms.com/submit"
+method="POST"
+class="visit-contact-form">
+
+
+<!-- Web3Forms Settings -->
+
+<input 
+type="hidden"
+name="access_key"
+value="00528b76-7476-4525-884e-c33834313d8b">
+
+
+<input 
+type="hidden"
+name="subject"
+value="Museo de Binalonan Visitor Inquiry">
+
+
+<input 
+type="hidden"
+name="from_name"
+value="Museo de Binalonan Website">
+
+
+<input 
+type="hidden"
+name="redirect"
+value="https://museo-de-binalonan.vercel.app/success.html">
+
+
+
+<!-- Honeypot Protection -->
+
+<input
+type="text"
+name="website"
+class="honeypot"
+tabindex="-1"
+autocomplete="off">
+
+
+
+<!-- Name -->
+
+<label>
+Name
+</label>
+
+<input
+type="text"
+name="name"
+class="form-control mb-3"
+placeholder="Your Name"
+maxlength="50"
+autocomplete="name"
+required>
+
+
+
+<!-- Email -->
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+name="email"
+class="form-control mb-3"
+placeholder="Your Email"
+maxlength="100"
+autocomplete="email"
+required>
+
+
+
+<!-- Message -->
+
+<label>
+Message
+</label>
+
+<textarea
+name="message"
+class="form-control mb-3"
+placeholder="Your Message"
+maxlength="500"
+rows="5"
+required></textarea>
+
+
+
+<!-- Web3Forms Bot Check -->
+
+<input
+type="checkbox"
+name="botcheck"
+style="display:none">
+
+
+
+<!-- Cloudflare Turnstile -->
+
+<div 
+class="cf-turnstile"
+data-sitekey="0x4AAAAAAD_wT-dFC8PelUne">
+</div>
+
+
+
+<button 
+type="submit"
+class="btn btn-museum mt-3">
+
+Send Inquiry
+
+</button>
+
+
+</form>
+
+
+</div>
+</section>
 
     <!-- =======================================
         FOOTER
@@ -447,5 +600,6 @@
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-security.js"></script>
   </body>
 </html>
