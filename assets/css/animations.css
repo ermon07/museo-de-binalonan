@@ -1,105 +1,69 @@
-    /*==================================================
+/*==================================================
                     HERO ANIMATION
     ==================================================*/
 
+.hero-title {
+  animation: fadeUp 0.8s ease forwards;
+}
 
-    .hero-title{
+.hero-description {
+  animation: fadeUp 0.8s ease 0.15s forwards;
 
-        animation:fadeUp .8s ease forwards;
+  opacity: 0;
+}
 
-    }
+.hero-section .btn-museum {
+  animation: fadeUp 0.8s ease 0.3s forwards;
 
+  opacity: 0;
+}
 
-    .hero-description{
-
-        animation:fadeUp .8s ease .15s forwards;
-
-        opacity:0;
-
-    }
-
-
-    .hero-section .btn-museum{
-
-        animation:fadeUp .8s ease .3s forwards;
-
-        opacity:0;
-
-    }
-
-
-    /*==================================================
+/*==================================================
                     SECTION REVEAL
     ==================================================*/
 
+.reveal {
+  opacity: 0;
 
-    .reveal{
+  transform: translateY(50px);
 
-        opacity:0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
-        transform:translateY(50px);
+.reveal.show {
+  opacity: 1;
 
-        transition:
-            opacity .8s ease,
-            transform .8s ease;
+  transform: translateY(0);
+}
 
-    }
-
-
-    .reveal.show{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-
-    /*==================================================
+/*==================================================
                     IMAGE EFFECT
     ==================================================*/
 
+.about-image img,
+.collection-image {
+  transition: transform 0.5s ease;
+}
 
-    .about-image img,
-    .collection-image{
+.about-image:hover img,
+.collection-image:hover {
+  transform: scale(1.04);
+}
 
-        transition:transform .5s ease;
-
-    }
-
-
-    .about-image:hover img,
-    .collection-image:hover{
-
-        transform:scale(1.04);
-
-    }
-
-
-    /*==================================================
+/*==================================================
                     KEYFRAMES
     ==================================================*/
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
 
-    @keyframes fadeUp{
+    transform: translateY(30px);
+  }
 
+  to {
+    opacity: 1;
 
-        from{
-
-            opacity:0;
-
-            transform:translateY(30px);
-
-        }
-
-
-        to{
-
-            opacity:1;
-
-            transform:translateY(0);
-
-        }
-
-
-    }
+    transform: translateY(0);
+  }
+}

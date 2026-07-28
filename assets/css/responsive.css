@@ -2,105 +2,67 @@
                 TABLET (≤ 991px)
 ==================================================*/
 
-@media (max-width:991.98px){
+@media (max-width: 991.98px) {
+  .museum-navbar {
+    background: var(--surface);
 
-    .museum-navbar{
+    border-bottom: 1px solid var(--border);
+  }
 
-        background:var(--surface);
+  .museum-navbar .brand-title,
+  .museum-navbar .brand-subtitle {
+    color: var(--text) !important;
+  }
 
-        border-bottom:1px solid var(--border);
+  .museum-navbar .nav-link {
+    color: var(--text) !important;
+  }
 
-    }
-
-    .museum-navbar .brand-title,
-    .museum-navbar .brand-subtitle{
-
-        color:var(--text)!important;
-
-    }
-
-    .museum-navbar .nav-link{
-
-        color:var(--text)!important;
-
-    }
-
-    .museum-navbar.scrolled .brand-title,
-    .museum-navbar.scrolled .brand-subtitle,
-    .museum-navbar.scrolled .nav-link{
-
-        color:var(--text)!important;
-
-    }
-
+  .museum-navbar.scrolled .brand-title,
+  .museum-navbar.scrolled .brand-subtitle,
+  .museum-navbar.scrolled .nav-link {
+    color: var(--text) !important;
+  }
 }
 
 /*==================================================
                 STATS MOBILE
 ==================================================*/
 
-
-@media(max-width:576px){
-
-    .stat-item h3{
-
-        font-size:2.2rem;
-
-    }
-
+@media (max-width: 576px) {
+  .stat-item h3 {
+    font-size: 2.2rem;
+  }
 }
 
 /*==================================================
                 VISIT MOBILE
 ==================================================*/
 
+@media (max-width: 768px) {
+  .visit-section {
+    padding: 80px 0;
+  }
 
-@media(max-width:768px){
+  .map-container {
+    height: 300px;
+  }
 
-
-    .visit-section{
-
-        padding:80px 0;
-
-    }
-
-
-    .map-container{
-
-        height:300px;
-
-    }
-
-
-    .visit-section h2{
-
-        font-size:2.2rem;
-
-    }
-
-
+  .visit-section h2 {
+    font-size: 2.2rem;
+  }
 }
 
 /*==================================================
                 FOOTER MOBILE
 ==================================================*/
 
+@media (max-width: 768px) {
+  .museum-footer {
+    text-align: center;
+  }
 
-@media(max-width:768px){
-
-
-    .museum-footer{
-
-        text-align:center;
-
-    }
-
-
-    .footer-brand p{
-
-        margin:auto;
-
-    }
-
-
+  .footer-brand p {
+    margin: auto;
+  }
 }
