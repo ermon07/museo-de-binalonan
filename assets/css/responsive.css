@@ -66,3 +66,126 @@
     margin: auto;
   }
 }
+
+@media(max-width:768px){
+
+    .footer-brand{
+        text-align:center;
+    }
+
+
+    .footer-logos{
+
+        justify-content:center;
+
+        width:100%;
+
+    }
+
+
+    .footer-logo,
+    .government-logo,
+    .museum-logo{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+}
+
+/*==================================================
+                FOOTER MOBILE SPACING
+==================================================*/
+
+
+@media(max-width:768px){
+
+
+    .museum-footer{
+
+        padding:60px 0 25px;
+
+    }
+
+
+
+    .footer-brand{
+
+        margin-bottom:20px;
+
+    }
+
+
+
+    .footer-logos{
+
+        margin-bottom:20px;
+
+        gap:15px;
+
+    }
+
+
+
+    .government-logo{
+
+        height:65px;
+
+    }
+
+    .museum-logo{
+
+        height:85px;
+    }
+
+
+
+    .footer-brand h3{
+
+        font-size:1.5rem;
+
+        margin-bottom:10px;
+
+    }
+
+
+
+    .footer-municipality{
+
+        font-size:.95rem;
+
+    }
+
+
+
+    .museum-footer h4{
+
+        margin-top:25px;
+
+        margin-bottom:15px;
+
+    }
+
+
+
+    .footer-links li{
+
+        margin-bottom:10px;
+
+    }
+
+
+
+    .footer-bottom{
+
+        margin-top:35px;
+
+        padding-top:20px;
+
+    }
+
+
+
+}
