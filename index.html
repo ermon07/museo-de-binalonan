@@ -1,571 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Museo de Binalonan</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museo de Binalonan</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/variables.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/animations.css" />
-  </head>
-  <body>
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg fixed-top museum-navbar">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="assets/img/museo-logo.png"
-            alt="Museo de Binalonan"
-            class="logo me-3"
-          />
-          <div class="brand-text">
-            <div class="brand-title">Museo de Binalonan</div>
-            <div class="brand-subtitle">Municipal Museum</div>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top museum-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/museo-logo.png" alt="Museo de Binalonan" class="logo me-3" />
+        <div class="brand-text">
+          <div class="brand-title">Museo de Binalonan</div>
+          <div class="brand-subtitle">Municipal Museum</div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collections">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visit">Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ================= HERO ================= -->
+  <header class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="hero-title"> Our Museum.<br /> Our Heritage. </h1>
+          <p class="hero-description"> More than a building, it is a space where stories, traditions, and heritage come alive for generations to come. </p>
+          <a href="#about" class="btn btn-museum"> Explore the Museum </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ABOUT -->
+  <section id="about" class="about-section reveal">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="about-image">
+            <img src="assets/img/mus.jpg" alt="Museo de Binalonan" class="img-fluid" />
           </div>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMenu"
-          aria-label="Toggle navigation"
-        >
-          <i class="bi bi-list"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Home</a>
+        </div>
+        <div class="col-lg-6">
+          <span class="section-label"> ABOUT THE MUSEUM </span>
+          <h2>Preserving the History of Binalonan</h2>
+          <p> Museo de Binalonan is dedicated to preserving, documenting, and showcasing the rich cultural heritage of the municipality through historical artifacts, archival materials, photographs, and community stories. </p>
+          <p> The museum serves as a learning space where residents, students, and visitors can discover the people, traditions, and events that shaped Binalonan through generations. </p>
+          <a href="#" class="btn btn-museum"> Learn More </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================================
+        MUSEUM HIGHLIGHTS
+======================================= -->
+  <section class="stats-section reveal">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <h3>2026</h3>
+            <p>Established</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <h3>Local</h3>
+            <p>Heritage Collection</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <h3>Free</h3>
+            <p>Admission</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <h3>Open</h3>
+            <p>For Everyone</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Collections -->
+  <section id="collections" class="collections-section reveal">
+    <div class="container">
+      <div class="section-title text-center">
+        <span>FEATURED COLLECTIONS</span>
+        <h2>Discover Our Heritage</h2>
+        <p> Explore selected collections that reflect the history, culture, and identity of the Municipality of Binalonan. </p>
+      </div>
+      <!-- Collection 1 -->
+      <div class="row align-items-center collection-item">
+        <div class="col-lg-6">
+          <img src="assets/img/museo-logo.png" class="img-fluid collection-image" alt="Traditional Clothing" />
+        </div>
+        <div class="col-lg-6">
+          <h3>Traditional Clothing</h3>
+          <p> A showcase of garments worn by early residents, reflecting local craftsmanship and identity. </p>
+          <a href="#"> View Collection → </a>
+        </div>
+      </div>
+      <!-- Collection 2 -->
+      <div class="row align-items-center collection-item flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <img src="assets/img/museo-logo.png" class="img-fluid collection-image" alt="Pottery" />
+        </div>
+        <div class="col-lg-6">
+          <h3>Ancient Pottery</h3>
+          <p> Earthenware and ceramic artifacts discovered from various periods of Binalonan's history. </p>
+          <a href="#"> View Collection → </a>
+        </div>
+      </div>
+      <!-- Collection 3 -->
+      <div class="row align-items-center collection-item">
+        <div class="col-lg-6">
+          <img src="assets/img/museo-logo.png" class="img-fluid collection-image" alt="Historical Documents" />
+        </div>
+        <div class="col-lg-6">
+          <h3>Historical Documents</h3>
+          <p> Archival records, maps, and photographs that preserve significant moments in the municipality's history. </p>
+          <a href="#"> View Collection → </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================================
+        VISIT THE MUSEUM
+======================================= -->
+  <section id="visit" class="visit-section reveal">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- MAP -->
+        <div class="col-lg-6">
+          <span class="section-label"> PLAN YOUR VISIT </span>
+          <h2>Visit Museo de Binalonan</h2>
+          <p class="visit-description"> Discover the history and heritage of Binalonan through our collections and cultural exhibits. </p>
+          <div class="visit-details">
+            <div class="visit-item">
+              <h4>Location</h4>
+              <p> Brgy.Poblacion, Binalonan, Pangasinan </p>
+            </div>
+            <div class="visit-item">
+              <h4>Opening Hours</h4>
+              <p> Monday - Friday<br> 8:00 AM - 5:00 PM </p>
+            </div>
+          </div>
+        </div>
+        <!-- INFORMATION -->
+        <div class="col-lg-6">         
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.8264240400736!2d120.59286407540922!3d16.04652325220455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391150033f58bd1%3A0x78ac63892d4e7b68!2sBinalonan%20Heritage%20Museum!5e0!3m2!1sen!2sph!4v1785129995476!5m2!1sen!2sph" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <!-- VISITOR INQUIRY FORM -->
+          <div class="visit-form mt-5">
+            <h4 class="mb-4"> Send an Inquiry </h4>
+            <form action="https://api.web3forms.com/submit" method="POST" class="visit-contact-form">
+              <!-- Web3Forms Settings -->
+              <input type="hidden" name="access_key" value="00528b76-7476-4525-884e-c33834313d8b">
+              <input type="hidden" name="subject" value="Museo de Binalonan Visitor Inquiry">
+              <input type="hidden" name="from_name" value="Museo de Binalonan Website">
+              <input type="hidden" name="redirect" value="https://museo-de-binalonan.vercel.app/success.html">
+              <!-- Honeypot Protection -->
+              <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off">
+              <!-- Name -->
+              <label> Name </label>
+              <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" maxlength="50" autocomplete="name" required>
+              <!-- Email -->
+              <label> Email </label>
+              <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" maxlength="100" autocomplete="email" required>
+              <!-- Message -->
+              <label> Message </label>
+              <textarea name="message" class="form-control mb-3" placeholder="Your Message" maxlength="500" rows="5" required></textarea>
+              <!-- Web3Forms Bot Check -->
+              <input type="checkbox" name="botcheck" style="display:none">
+              <button type="submit" class="btn btn-museum mt-3"> Send Inquiry </button>
+            </form>
+          </div>
+  </section>
+  <!-- =======================================
+        FOOTER
+======================================= -->
+  <footer id="footer" class="museum-footer">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- BRAND -->
+        <div class="col-lg-8">
+          <div class="footer-brand">
+            <div class="footer-logos">
+              <img src="assets/img/binalonan-logo.png" class="government-logo">
+              <img src="assets/img/museo-logo.png" class="museum-logo">
+            </div>
+            <h3> Museo de Binalonan </h3>
+            <span class="footer-municipality"> Municipality of Binalonan </span>
+            <p> Preserving our history, culture, and heritage for future generations. </p>
+          </div>
+        </div>
+        <!-- LINKS -->
+        <div class="col-lg-2 col-md-6">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#hero"> Home </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+            <li>
+              <a href="#about"> About </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#collections">Collections</a>
+            <li>
+              <a href="#collections"> Collections </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#visit">Visit</a>
+            <li>
+              <a href="#visit"> Visit </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
+          </ul>
+        </div>
+        <!-- SOCIAL -->
+        <div class="col-lg-2 col-md-6">
+          <h4>Follow Us</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61592102613638"> Facebook </a>
+            </li>
+            <li>
+              <a href="https://binalonan.gov.ph/"> Municipal Website </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <!-- ================= HERO ================= -->
-    <header class="hero-section" id="hero">
-      <div class="hero-overlay"></div>
-
-      <div class="container hero-content">
-        <div class="row min-vh-100 align-items-center">
-          <div class="col-lg-6">
-            <h1 class="hero-title">
-              Our Museum.<br />
-              Our Heritage.
-            </h1>
-
-            <p class="hero-description">
-              More than a building, it is a space where stories, traditions, and
-              heritage come alive for generations to come.
-            </p>
-
-            <a href="#about" class="btn btn-museum"> Explore the Museum </a>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <p>© 2026 Museo de Binalonan. All Rights Reserved.</p>
       </div>
-    </header>
-
-    <!-- ABOUT -->
-    <section id="about" class="about-section reveal">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="about-image">
-              <img
-                src="assets/img/mus.jpg"
-                alt="Museo de Binalonan"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <span class="section-label"> ABOUT THE MUSEUM </span>
-
-            <h2>Preserving the History of Binalonan</h2>
-
-            <p>
-              Museo de Binalonan is dedicated to preserving, documenting, and
-              showcasing the rich cultural heritage of the municipality through
-              historical artifacts, archival materials, photographs, and
-              community stories.
-            </p>
-
-            <p>
-              The museum serves as a learning space where residents, students,
-              and visitors can discover the people, traditions, and events that
-              shaped Binalonan through generations.
-            </p>
-
-            <a href="#" class="btn btn-museum"> Learn More </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================
-        MUSEUM HIGHLIGHTS
-======================================= -->
-
-    <section class="stats-section reveal">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-6 col-lg-3">
-            <div class="stat-item">
-              <h3>2026</h3>
-
-              <p>Established</p>
-            </div>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <div class="stat-item">
-              <h3>Local</h3>
-
-              <p>Heritage Collection</p>
-            </div>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <div class="stat-item">
-              <h3>Free</h3>
-
-              <p>Admission</p>
-            </div>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <div class="stat-item">
-              <h3>Open</h3>
-
-              <p>For Everyone</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Collections -->
-    <section id="collections" class="collections-section reveal">
-      <div class="container">
-        <div class="section-title text-center">
-          <span>FEATURED COLLECTIONS</span>
-
-          <h2>Discover Our Heritage</h2>
-
-          <p>
-            Explore selected collections that reflect the history, culture, and
-            identity of the Municipality of Binalonan.
-          </p>
-        </div>
-
-        <!-- Collection 1 -->
-
-        <div class="row align-items-center collection-item">
-          <div class="col-lg-6">
-            <img
-              src="assets/img/museo-logo.png"
-              class="img-fluid collection-image"
-              alt="Traditional Clothing"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <h3>Traditional Clothing</h3>
-
-            <p>
-              A showcase of garments worn by early residents, reflecting local
-              craftsmanship and identity.
-            </p>
-
-            <a href="#"> View Collection → </a>
-          </div>
-        </div>
-
-        <!-- Collection 2 -->
-
-        <div class="row align-items-center collection-item flex-lg-row-reverse">
-          <div class="col-lg-6">
-            <img
-              src="assets/img/museo-logo.png"
-              class="img-fluid collection-image"
-              alt="Pottery"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <h3>Ancient Pottery</h3>
-
-            <p>
-              Earthenware and ceramic artifacts discovered from various periods
-              of Binalonan's history.
-            </p>
-
-            <a href="#"> View Collection → </a>
-          </div>
-        </div>
-
-        <!-- Collection 3 -->
-
-        <div class="row align-items-center collection-item">
-          <div class="col-lg-6">
-            <img
-              src="assets/img/museo-logo.png"
-              class="img-fluid collection-image"
-              alt="Historical Documents"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <h3>Historical Documents</h3>
-
-            <p>
-              Archival records, maps, and photographs that preserve significant
-              moments in the municipality's history.
-            </p>
-
-            <a href="#"> View Collection → </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================
-        VISIT THE MUSEUM
-======================================= -->
-
-    <section id="visit" class="visit-section reveal">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <!-- MAP -->
-
-          <div class="col-lg-6">
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.8264240400736!2d120.59286407540922!3d16.04652325220455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391150033f58bd1%3A0x78ac63892d4e7b68!2sBinalonan%20Heritage%20Museum!5e0!3m2!1sen!2sph!4v1785129995476!5m2!1sen!2sph"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- INFORMATION -->
-
-          <div class="col-lg-6">
-            <span class="section-label"> PLAN YOUR VISIT </span>
-
-            <h2>Visit Museo de Binalonan</h2>
-
-            <p class="visit-description">
-              Discover the history and heritage of Binalonan through our
-              collections and cultural exhibits.
-            </p>
-
-            <div class="visit-details">
-
-  <div class="visit-item">
-    <h4>Location</h4>
-
-    <p>
-     Brgy.Poblacion, Binalonan, Pangasinan
-    </p>
-  </div>
-
-
-  <div class="visit-item">
-    <h4>Opening Hours</h4>
-
-    <p>
-      Monday - Friday<br>
-      8:00 AM - 5:00 PM
-    </p>
-  </div>
-</div>
-
-
-<!-- VISITOR INQUIRY FORM -->
-
-<!-- VISITOR INQUIRY FORM -->
-
-<div class="visit-form mt-5">
-
-<h4 class="mb-4">
-Send an Inquiry
-</h4>
-
-
-<form 
-action="https://api.web3forms.com/submit"
-method="POST"
-class="visit-contact-form">
-
-
-<!-- Web3Forms Settings -->
-
-<input 
-type="hidden"
-name="access_key"
-value="00528b76-7476-4525-884e-c33834313d8b">
-
-
-<input 
-type="hidden"
-name="subject"
-value="Museo de Binalonan Visitor Inquiry">
-
-
-<input 
-type="hidden"
-name="from_name"
-value="Museo de Binalonan Website">
-
-
-<input 
-type="hidden"
-name="redirect"
-value="https://museo-de-binalonan.vercel.app/success.html">
-
-
-
-<!-- Honeypot Protection -->
-
-<input
-type="text"
-name="website"
-class="honeypot"
-tabindex="-1"
-autocomplete="off">
-
-
-
-<!-- Name -->
-
-<label>
-Name
-</label>
-
-<input
-type="text"
-name="name"
-class="form-control mb-3"
-placeholder="Your Name"
-maxlength="50"
-autocomplete="name"
-required>
-
-
-
-<!-- Email -->
-
-<label>
-Email
-</label>
-
-<input
-type="email"
-name="email"
-class="form-control mb-3"
-placeholder="Your Email"
-maxlength="100"
-autocomplete="email"
-required>
-
-
-
-<!-- Message -->
-
-<label>
-Message
-</label>
-
-<textarea
-name="message"
-class="form-control mb-3"
-placeholder="Your Message"
-maxlength="500"
-rows="5"
-required></textarea>
-
-
-
-<!-- Web3Forms Bot Check -->
-
-<input
-type="checkbox"
-name="botcheck"
-style="display:none">
-
-
-
-
-<button 
-type="submit"
-class="btn btn-museum mt-3">
-
-Send Inquiry
-
-</button>
-
-
-</form>
-
-
-</div>
-</section>
-
-    <!-- =======================================
-        FOOTER
-======================================= -->
-
-    <footer id="footer" class="museum-footer">
-      <div class="container">
-        <div class="row gy-5">
-          <!-- BRAND -->
-          <div class="col-lg-8">
-
-    <div class="footer-brand">
-
-
-        <div class="footer-logos">
-
-            <img src="assets/img/binalonan-logo.png"
-            class="government-logo">
-
-
-            <img src="assets/img/museo-logo.png"
-            class="museum-logo">
-
-
-        </div>
-
-
-
-        <h3>
-            Museo de Binalonan
-        </h3>
-
-
-
-        <span class="footer-municipality">
-            Municipality of Binalonan
-        </span>
-
-
-
-        <p>
-            Preserving our history, culture, 
-            and heritage for future generations.
-        </p>
-
-
     </div>
+  </footer>
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+    <i class="bi bi-moon-fill"></i>
+  </button>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-security.js"></script>
+</body>
 
-</div>
-
-          <!-- LINKS -->
-          <div class="col-lg-2 col-md-6">
-            <h4>Explore</h4>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#hero"> Home </a>
-              </li>
-
-              <li>
-                <a href="#about"> About </a>
-              </li>
-
-              <li>
-                <a href="#collections"> Collections </a>
-              </li>
-
-              <li>
-                <a href="#visit"> Visit </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- SOCIAL -->
-          <div class="col-lg-2 col-md-6">
-            <h4>Follow Us</h4>
-
-            <ul class="footer-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61592102613638"
-                >
-                  Facebook
-                </a>
-              </li>
-
-              <li>
-                <a href="https://binalonan.gov.ph/"> Municipal Website </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 Museo de Binalonan. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Theme Toggle -->
-
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-      <i class="bi bi-moon-fill"></i>
-    </button>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-security.js"></script>
-  </body>
 </html>
