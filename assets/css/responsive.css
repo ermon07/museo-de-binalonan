@@ -189,3 +189,21 @@
 
 
 }
+
+@media(max-width:768px){
+
+    .floorplan-viewer model-viewer{
+
+        height:420px;
+
+    }
+
+    .floorplan-help{
+
+        gap:15px;
+
+        font-size:.85rem;
+
+    }
+
+}
