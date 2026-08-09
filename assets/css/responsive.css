@@ -207,3 +207,31 @@
     }
 
 }
+
+/* ==================================================
+                FUTURE PLANS MOBILE
+================================================== */
+
+@media(max-width:768px){
+
+    .future-plans-section{
+
+        padding:80px 0;
+
+    }
+
+
+    .future-video-content{
+
+        padding:22px;
+
+    }
+
+
+    .future-video-content h3{
+
+        font-size:1.35rem;
+
+    }
+
+}
