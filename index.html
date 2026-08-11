@@ -301,11 +301,11 @@
 
       <span>MUSEUM FUTURE PLANS</span>
 
-      <h2>A Vision for Museo de Binalonan</h2>
+      <h2>A Glimpse Into the Future</h2>
 
       <p>
-        Explore the planned spaces and future development
-        of Museo de Binalonan through these visual previews.
+        Explore the planned spaces and facilities that will shape
+        the future of Museo de Binalonan.
       </p>
 
     </div>
@@ -314,25 +314,21 @@
     <div class="row g-4">
 
 
-      <!-- VIDEO 1 -->
+      <!-- PLAN 1 -->
 
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div
-          class="video-card"
-          data-video="Q2eXE67QWkA"
+          class="future-plan-card"
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786433194/Media3.mp4"
           data-title="Galleries 1–10"
         >
 
-          <div class="video-thumbnail">
+          <div class="future-plan-preview">
 
-            <img
-              src="https://img.youtube.com/vi/Q2eXE67QWkA/maxresdefault.jpg"
-              alt="Galleries 1–10"
-              loading="lazy"
-            >
-
-            <div class="video-overlay">
+            <div class="future-plan-overlay">
 
               <div class="play-button">
                 <i class="bi bi-play-fill"></i>
@@ -343,17 +339,23 @@
           </div>
 
 
-          <div class="video-content">
+          <div class="future-plan-content">
 
-            <h3>Galleries 1–10</h3>
+            <span class="video-label">
+              GALLERIES
+            </span>
+
+            <h3>
+              Galleries 1–10
+            </h3>
 
             <p>
-              A visual preview of the planned museum galleries
-              and exhibition spaces.
+              Explore the planned gallery spaces designed to
+              showcase the heritage and history of Binalonan.
             </p>
 
-            <span class="video-link">
-              View Preview
+            <span class="view-plan">
+              View Plan
               <i class="bi bi-arrow-right"></i>
             </span>
 
@@ -365,25 +367,21 @@
 
 
 
-      <!-- VIDEO 2 -->
+      <!-- PLAN 2 -->
 
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div
-          class="video-card"
-          data-video="RrK8OMYaI3s"
+          class="future-plan-card"
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431039/Media2.mp4"
           data-title="Office & Conference Room"
         >
 
-          <div class="video-thumbnail">
+          <div class="future-plan-preview">
 
-            <img
-              src="https://img.youtube.com/vi/RrK8OMYaI3s/maxresdefault.jpg"
-              alt="Office and Conference Room"
-              loading="lazy"
-            >
-
-            <div class="video-overlay">
+            <div class="future-plan-overlay">
 
               <div class="play-button">
                 <i class="bi bi-play-fill"></i>
@@ -394,17 +392,23 @@
           </div>
 
 
-          <div class="video-content">
+          <div class="future-plan-content">
 
-            <h3>Office & Conference Room</h3>
+            <span class="video-label">
+              FACILITIES
+            </span>
+
+            <h3>
+              Office &amp; Conference Room
+            </h3>
 
             <p>
-              A preview of the planned administrative and
-              conference spaces of the museum.
+              Take a look at the planned administrative and
+              conference facilities of the museum.
             </p>
 
-            <span class="video-link">
-              View Preview
+            <span class="view-plan">
+              View Plan
               <i class="bi bi-arrow-right"></i>
             </span>
 
@@ -416,25 +420,21 @@
 
 
 
-      <!-- VIDEO 3 -->
+      <!-- PLAN 3 -->
 
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div
-          class="video-card"
-          data-video="pbBZXdUAiRE"
+          class="future-plan-card"
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431382/Media1.mp4"
           data-title="Whole Museum"
         >
 
-          <div class="video-thumbnail">
+          <div class="future-plan-preview">
 
-            <img
-              src="https://img.youtube.com/vi/pbBZXdUAiRE/maxresdefault.jpg"
-              alt="Whole Museum"
-              loading="lazy"
-            >
-
-            <div class="video-overlay">
+            <div class="future-plan-overlay">
 
               <div class="play-button">
                 <i class="bi bi-play-fill"></i>
@@ -445,17 +445,23 @@
           </div>
 
 
-          <div class="video-content">
+          <div class="future-plan-content">
 
-            <h3>Whole Museum</h3>
+            <span class="video-label">
+              MASTER PLAN
+            </span>
+
+            <h3>
+              Whole Museum
+            </h3>
 
             <p>
-              Take a look at the overall planned layout
-              and design of Museo de Binalonan.
+              Explore an overall preview of the planned Museo
+              de Binalonan building.
             </p>
 
-            <span class="video-link">
-              View Preview
+            <span class="view-plan">
+              View Plan
               <i class="bi bi-arrow-right"></i>
             </span>
 
@@ -472,15 +478,15 @@
 
 </section>
 
-
 <!-- =======================================
-        VIDEO MODAL
+        FUTURE PLAN VIDEO MODAL
 ======================================= -->
 
 <div
   class="modal fade"
   id="videoModal"
   tabindex="-1"
+  aria-labelledby="videoModalLabel"
   aria-hidden="true"
 >
 
@@ -492,9 +498,9 @@
 
         <h5
           class="modal-title"
-          id="videoModalTitle"
+          id="videoModalLabel"
         >
-          Museum Future Plans
+          Museum Future Plan
         </h5>
 
         <button
@@ -509,16 +515,25 @@
 
       <div class="modal-body">
 
-        <div class="video-player-container">
+        <div class="modal-video-wrapper">
 
-          <iframe
-            id="museumVideo"
-            src=""
-            title="Museo de Binalonan Future Plans"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+          <video
+            id="futurePlanVideo"
+            class="modal-video"
+            controls
+            playsinline
+            preload="none"
+          >
+
+            <source
+              id="futurePlanVideoSource"
+              src=""
+              type="video/mp4"
+            />
+
+            Your browser does not support the video tag.
+
+          </video>
 
         </div>
 
@@ -643,6 +658,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
+  <script src="assets/js/future-plans.js"></script>
   <script src="assets/js/navbar.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/main.js"></script>
