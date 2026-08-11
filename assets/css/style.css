@@ -1279,3 +1279,16 @@ body.dark-mode .video-modal-content .btn-close {
 
 }
 
+/* ==================================================
+        TRANSPARENT NAVBAR - HERO
+================================================== */
+
+.museum-navbar:not(.scrolled) .nav-link,
+.museum-navbar:not(.scrolled) .nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.museum-navbar:not(.scrolled) .nav-link:hover,
+.museum-navbar:not(.scrolled) .nav-link.active:hover {
+  color: #fff;
+}
