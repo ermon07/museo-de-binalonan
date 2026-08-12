@@ -1262,3 +1262,57 @@ body.dark-mode .video-modal-content .btn-close {
   }
 
 }
+
+/* ==================================================
+                MUSEUM INTRO
+================================================== */
+
+.museum-intro {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #000;
+
+    z-index: 99999;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+
+}
+
+
+/* INTRO VIDEO */
+
+.museum-intro video {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* FADE OUT */
+
+.museum-intro.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
