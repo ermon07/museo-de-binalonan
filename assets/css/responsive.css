@@ -67,172 +67,106 @@
   }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .footer-brand {
+    text-align: center;
+  }
 
-    .footer-brand{
-        text-align:center;
-    }
+  .footer-logos {
+    justify-content: center;
 
+    width: 100%;
+  }
 
-    .footer-logos{
+  .footer-logo,
+  .government-logo,
+  .museum-logo {
+    margin-left: auto;
 
-        justify-content:center;
-
-        width:100%;
-
-    }
-
-
-    .footer-logo,
-    .government-logo,
-    .museum-logo{
-
-        margin-left:auto;
-
-        margin-right:auto;
-
-    }
-
+    margin-right: auto;
+  }
 }
 
 /*==================================================
                 FOOTER MOBILE SPACING
 ==================================================*/
 
+@media (max-width: 768px) {
+  .museum-footer {
+    padding: 60px 0 25px;
+  }
 
-@media(max-width:768px){
+  .footer-brand {
+    margin-bottom: 20px;
+  }
 
+  .footer-logos {
+    margin-bottom: 20px;
 
-    .museum-footer{
+    gap: 15px;
+  }
 
-        padding:60px 0 25px;
+  .government-logo {
+    height: 65px;
+  }
 
-    }
+  .museum-logo {
+    height: 85px;
+  }
 
+  .footer-brand h3 {
+    font-size: 1.5rem;
 
+    margin-bottom: 10px;
+  }
 
-    .footer-brand{
+  .footer-municipality {
+    font-size: 0.95rem;
+  }
 
-        margin-bottom:20px;
+  .museum-footer h4 {
+    margin-top: 25px;
 
-    }
+    margin-bottom: 15px;
+  }
 
+  .footer-links li {
+    margin-bottom: 10px;
+  }
 
+  .footer-bottom {
+    margin-top: 35px;
 
-    .footer-logos{
-
-        margin-bottom:20px;
-
-        gap:15px;
-
-    }
-
-
-
-    .government-logo{
-
-        height:65px;
-
-    }
-
-    .museum-logo{
-
-        height:85px;
-    }
-
-
-
-    .footer-brand h3{
-
-        font-size:1.5rem;
-
-        margin-bottom:10px;
-
-    }
-
-
-
-    .footer-municipality{
-
-        font-size:.95rem;
-
-    }
-
-
-
-    .museum-footer h4{
-
-        margin-top:25px;
-
-        margin-bottom:15px;
-
-    }
-
-
-
-    .footer-links li{
-
-        margin-bottom:10px;
-
-    }
-
-
-
-    .footer-bottom{
-
-        margin-top:35px;
-
-        padding-top:20px;
-
-    }
-
-
-
+    padding-top: 20px;
+  }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .floorplan-viewer model-viewer {
+    height: 420px;
+  }
 
-    .floorplan-viewer model-viewer{
+  .floorplan-help {
+    gap: 15px;
 
-        height:420px;
-
-    }
-
-    .floorplan-help{
-
-        gap:15px;
-
-        font-size:.85rem;
-
-    }
-
+    font-size: 0.85rem;
+  }
 }
 
 /* ==================================================
                 FUTURE PLANS MOBILE
 ================================================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .future-plans-section {
+    padding: 80px 0;
+  }
 
-    .future-plans-section{
+  .future-video-content {
+    padding: 22px;
+  }
 
-        padding:80px 0;
-
-    }
-
-
-    .future-video-content{
-
-        padding:22px;
-
-    }
-
-
-    .future-video-content h3{
-
-        font-size:1.35rem;
-
-    }
-
+  .future-video-content h3 {
+    font-size: 1.35rem;
+  }
 }
-

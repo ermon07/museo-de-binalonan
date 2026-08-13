@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Museo de Binalonan</title>
-  <script type="module"
-  src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
   </script>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -25,25 +24,11 @@
 
 <body>
   <!-- ================= MUSEUM INTRO ================= -->
-
-<div id="museum-intro" class="museum-intro">
-
-  <video
-    id="intro-video"
-    autoplay
-    muted
-    playsinline
-    preload="auto"
-  >
-
-    <source
-      src="https://res.cloudinary.com/si5ytdge/video/upload/v1786501094/logo-reveal.mov"
-      type="video/mp4"
-    />
-
-  </video>
-
-</div>
+  <div id="museum-intro" class="museum-intro">
+    <video id="intro-video" autoplay muted playsinline preload="auto">
+      <source src="https://res.cloudinary.com/si5ytdge/video/upload/v1786501094/logo-reveal.mov" type="video/mp4" />
+    </video>
+  </div>
   <!-- ================= NAVBAR ================= -->
   <nav class="navbar navbar-expand-lg fixed-top museum-navbar">
     <div class="container">
@@ -116,143 +101,59 @@
   <!-- =======================================
         FEATURED COLLECTIONS
 ======================================= -->
-
-<section id="collections" class="collections-section reveal">
-
-  <div class="container">
-
-    <div class="section-title text-center">
-
-      <span>FEATURED COLLECTIONS</span>
-
-      <h2>Discover Our Heritage</h2>
-
-      <p>
-        Explore selected collections that reflect the history,
-        culture, and identity of Binalonan.
-      </p>
-
+  <section id="collections" class="collections-section reveal">
+    <div class="container">
+      <div class="section-title text-center">
+        <span>FEATURED COLLECTIONS</span>
+        <h2>Discover Our Heritage</h2>
+        <p> Explore selected collections that reflect the history, culture, and identity of Binalonan. </p>
+      </div>
+      <div class="row g-4">
+        <!-- COLLECTION 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card">
+            <div class="collection-card-image">
+              <img src="assets/img/museum-placeholder.jpg" alt="Traditional Clothing" />
+            </div>
+            <div class="collection-card-content">
+              <h3>Traditional Clothing</h3>
+              <p> Garments reflecting local craftsmanship and identity. </p>
+              <a href="#"> View Collection <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- COLLECTION 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card">
+            <div class="collection-card-image">
+              <img src="assets/img/museum-placeholder.jpg" alt="Ancient Pottery" />
+            </div>
+            <div class="collection-card-content">
+              <h3>Ancient Pottery</h3>
+              <p> Earthenware and artifacts from Binalonan's history. </p>
+              <a href="#"> View Collection <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- COLLECTION 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card">
+            <div class="collection-card-image">
+              <img src="assets/img/museum-placeholder.jpg" alt="Historical Documents" />
+            </div>
+            <div class="collection-card-content">
+              <h3>Historical Documents</h3>
+              <p> Records and photographs preserving significant moments. </p>
+              <a href="#"> View Collection <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <div class="row g-4">
-
-
-      <!-- COLLECTION 1 -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="collection-card">
-
-          <div class="collection-card-image">
-
-            <img
-              src="assets/img/museum-placeholder.jpg"
-              alt="Traditional Clothing"
-            />
-
-          </div>
-
-
-          <div class="collection-card-content">
-
-            <h3>Traditional Clothing</h3>
-
-            <p>
-              Garments reflecting local craftsmanship and identity.
-            </p>
-
-            <a href="#">
-              View Collection
-              <i class="bi bi-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- COLLECTION 2 -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="collection-card">
-
-          <div class="collection-card-image">
-
-            <img
-              src="assets/img/museum-placeholder.jpg"
-              alt="Ancient Pottery"
-            />
-
-          </div>
-
-
-          <div class="collection-card-content">
-
-            <h3>Ancient Pottery</h3>
-
-            <p>
-              Earthenware and artifacts from Binalonan's history.
-            </p>
-
-            <a href="#">
-              View Collection
-              <i class="bi bi-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- COLLECTION 3 -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="collection-card">
-
-          <div class="collection-card-image">
-
-            <img
-              src="assets/img/museum-placeholder.jpg"
-              alt="Historical Documents"
-            />
-
-          </div>
-
-
-          <div class="collection-card-content">
-
-            <h3>Historical Documents</h3>
-
-            <p>
-              Records and photographs preserving significant moments.
-            </p>
-
-            <a href="#">
-              View Collection
-              <i class="bi bi-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
+  </section>
   <!-- =======================================
         3D FLOOR PLAN
 
@@ -311,262 +212,97 @@
 </section>
 
 ======================================= -->
-
-<!-- =======================================
+  <!-- =======================================
         MUSEUM FUTURE PLANS
 ======================================= -->
-
-<section id="future-plans" class="future-plans-section reveal">
-
-  <div class="container">
-
-    <div class="section-title text-center">
-
-      <span>MUSEUM FUTURE PLANS</span>
-
-      <h2>A Glimpse Into the Future</h2>
-
-      <p>
-        Explore the planned spaces and facilities that will shape
-        the future of Museo de Binalonan.
-      </p>
-
+  <section id="future-plans" class="future-plans-section reveal">
+    <div class="container">
+      <div class="section-title text-center">
+        <span>MUSEUM FUTURE PLANS</span>
+        <h2>A Glimpse Into the Future</h2>
+        <p> Explore the planned spaces and facilities that will shape the future of Museo de Binalonan. </p>
+      </div>
+      <div class="row g-4">
+        <!-- PLAN 1 -->
+        <div class="col-lg-4">
+          <div class="future-plan-card" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786433194/Media3.mp4" data-title="Galleries 1–10">
+            <div class="future-plan-preview">
+              <div class="future-plan-overlay">
+                <div class="play-button">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="future-plan-content">
+              <span class="video-label"> GALLERIES </span>
+              <h3> Galleries 1–10 </h3>
+              <p> Explore the planned gallery spaces designed to showcase the heritage and history of Binalonan. </p>
+              <span class="view-plan"> View Plan <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- PLAN 2 -->
+        <div class="col-lg-4">
+          <div class="future-plan-card" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431039/Media2.mp4" data-title="Office & Conference Room">
+            <div class="future-plan-preview">
+              <div class="future-plan-overlay">
+                <div class="play-button">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="future-plan-content">
+              <span class="video-label"> FACILITIES </span>
+              <h3> Office &amp; Conference Room </h3>
+              <p> Take a look at the planned administrative and conference facilities of the museum. </p>
+              <span class="view-plan"> View Plan <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- PLAN 3 -->
+        <div class="col-lg-4">
+          <div class="future-plan-card" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431382/Media1.mp4" data-title="Whole Museum">
+            <div class="future-plan-preview">
+              <div class="future-plan-overlay">
+                <div class="play-button">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="future-plan-content">
+              <span class="video-label"> MASTER PLAN </span>
+              <h3> Whole Museum </h3>
+              <p> Explore an overall preview of the planned Museo de Binalonan building. </p>
+              <span class="view-plan"> View Plan <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <div class="row g-4">
-
-
-      <!-- PLAN 1 -->
-
-      <div class="col-lg-4">
-
-        <div
-          class="future-plan-card"
-          data-bs-toggle="modal"
-          data-bs-target="#videoModal"
-          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786433194/Media3.mp4"
-          data-title="Galleries 1–10"
-        >
-
-          <div class="future-plan-preview">
-
-            <div class="future-plan-overlay">
-
-              <div class="play-button">
-                <i class="bi bi-play-fill"></i>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="future-plan-content">
-
-            <span class="video-label">
-              GALLERIES
-            </span>
-
-            <h3>
-              Galleries 1–10
-            </h3>
-
-            <p>
-              Explore the planned gallery spaces designed to
-              showcase the heritage and history of Binalonan.
-            </p>
-
-            <span class="view-plan">
-              View Plan
-              <i class="bi bi-arrow-right"></i>
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PLAN 2 -->
-
-      <div class="col-lg-4">
-
-        <div
-          class="future-plan-card"
-          data-bs-toggle="modal"
-          data-bs-target="#videoModal"
-          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431039/Media2.mp4"
-          data-title="Office & Conference Room"
-        >
-
-          <div class="future-plan-preview">
-
-            <div class="future-plan-overlay">
-
-              <div class="play-button">
-                <i class="bi bi-play-fill"></i>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="future-plan-content">
-
-            <span class="video-label">
-              FACILITIES
-            </span>
-
-            <h3>
-              Office &amp; Conference Room
-            </h3>
-
-            <p>
-              Take a look at the planned administrative and
-              conference facilities of the museum.
-            </p>
-
-            <span class="view-plan">
-              View Plan
-              <i class="bi bi-arrow-right"></i>
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PLAN 3 -->
-
-      <div class="col-lg-4">
-
-        <div
-          class="future-plan-card"
-          data-bs-toggle="modal"
-          data-bs-target="#videoModal"
-          data-video="https://res.cloudinary.com/si5ytdge/video/upload/v1786431382/Media1.mp4"
-          data-title="Whole Museum"
-        >
-
-          <div class="future-plan-preview">
-
-            <div class="future-plan-overlay">
-
-              <div class="play-button">
-                <i class="bi bi-play-fill"></i>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="future-plan-content">
-
-            <span class="video-label">
-              MASTER PLAN
-            </span>
-
-            <h3>
-              Whole Museum
-            </h3>
-
-            <p>
-              Explore an overall preview of the planned Museo
-              de Binalonan building.
-            </p>
-
-            <span class="view-plan">
-              View Plan
-              <i class="bi bi-arrow-right"></i>
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =======================================
+  </section>
+  <!-- =======================================
         FUTURE PLAN VIDEO MODAL
 ======================================= -->
-
-<div
-  class="modal fade"
-  id="videoModal"
-  tabindex="-1"
-  aria-labelledby="videoModalLabel"
-  aria-hidden="true"
->
-
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-
-    <div class="modal-content video-modal-content">
-
-      <div class="modal-header">
-
-        <h5
-          class="modal-title"
-          id="videoModalLabel"
-        >
-          Museum Future Plan
-        </h5>
-
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-
-      </div>
-
-
-      <div class="modal-body">
-
-        <div class="modal-video-wrapper">
-
-          <video
-            id="futurePlanVideo"
-            class="modal-video"
-            controls
-            playsinline
-            preload="none"
-          >
-
-            <source
-              id="futurePlanVideoSource"
-              src=""
-              type="video/mp4"
-            />
-
-            Your browser does not support the video tag.
-
-          </video>
-
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content video-modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel"> Museum Future Plan </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
+        <div class="modal-body">
+          <div class="modal-video-wrapper">
+            <video id="futurePlanVideo" class="modal-video" controls playsinline preload="none">
+              <source id="futurePlanVideoSource" src="" type="video/mp4" /> Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </div>
-
     </div>
-
   </div>
-
-</div>
   <!-- =======================================
         VISIT THE MUSEUM
 ======================================= -->
@@ -590,7 +326,7 @@
           </div>
         </div>
         <!-- INFORMATION -->
-        <div class="col-lg-6">         
+        <div class="col-lg-6">
           <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.8264240400736!2d120.59286407540922!3d16.04652325220455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391150033f58bd1%3A0x78ac63892d4e7b68!2sBinalonan%20Heritage%20Museum!5e0!3m2!1sen!2sph!4v1785129995476!5m2!1sen!2sph" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>

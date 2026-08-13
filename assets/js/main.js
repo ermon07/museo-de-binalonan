@@ -72,47 +72,24 @@ const videoModalTitle = document.getElementById("videoModalTitle");
 
 const videoModalElement = document.getElementById("videoModal");
 
+if (videoCards.length && museumVideo && videoModalTitle && videoModalElement) {
+  const videoModal = new bootstrap.Modal(videoModalElement);
 
-if (
-    videoCards.length &&
-    museumVideo &&
-    videoModalTitle &&
-    videoModalElement
-) {
+  videoCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const videoId = card.dataset.video;
 
-    const videoModal = new bootstrap.Modal(videoModalElement);
+      const title = card.dataset.title;
 
+      videoModalTitle.textContent = title;
 
-    videoCards.forEach((card) => {
+      museumVideo.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
 
-        card.addEventListener("click", () => {
-
-            const videoId = card.dataset.video;
-
-            const title = card.dataset.title;
-
-
-            videoModalTitle.textContent = title;
-
-
-            museumVideo.src =
-                `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
-
-
-            videoModal.show();
-
-        });
-
+      videoModal.show();
     });
+  });
 
-
-    videoModalElement.addEventListener(
-        "hidden.bs.modal",
-        () => {
-
-            museumVideo.src = "";
-
-        }
-    );
-
+  videoModalElement.addEventListener("hidden.bs.modal", () => {
+    museumVideo.src = "";
+  });
 }
